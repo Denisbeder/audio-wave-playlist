@@ -1,3 +1,5 @@
+<img src="https://i.imgur.com/vFUdDIp.gif" />
+
 # About this project
 
 This is a project for a desktop application for automating playlists for radios. The project involves several applications that are integrated, this being one of them.
