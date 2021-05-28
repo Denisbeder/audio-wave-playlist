@@ -1,4 +1,4 @@
-<img src="https://i.imgur.com/vFUdDIp.gif" />
+<img src="https://pasteboard.co/K3ZueWh.gif" width="100%" heigth="auto" />
 
 # About this project
 
