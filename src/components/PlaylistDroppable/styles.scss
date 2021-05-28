@@ -1,0 +1,40 @@
+@import "~@blueprintjs/core/lib/scss/variables.scss";
+
+.playlist-dropplable {
+    overflow-y: overlay;
+    overflow-x: hidden;
+    min-height: 99%;
+    
+    &.scrollable {
+        padding: 0 20px;
+        &::-webkit-scrollbar-track {
+            background-color: $light-gray5;
+        }
+
+        &::-webkit-scrollbar {
+            background-color: $light-gray5;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            border-color: $light-gray5;
+        }
+    }
+
+    .disable-animation {
+        transform: none !important;
+    }
+
+    .#{$ns}-non-ideal-state {
+        color: $gray4;
+    
+        [class$="-visual"] {
+            color: $light-gray3 !important;
+        }
+    
+        [class$="-heading"] {
+            color: inherit;
+        }
+    }
+}
+
+

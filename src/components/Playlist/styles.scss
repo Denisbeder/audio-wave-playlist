@@ -1,0 +1,27 @@
+@import "~@blueprintjs/core/lib/scss/variables.scss";
+
+.playlist {
+	display: grid;
+	grid-template-columns: 73% auto;
+
+	.droppable,
+	.draggable {
+		height: calc(100vh - #{$pt-navbar-height});
+		min-height: calc(100vh - #{$pt-navbar-height});
+		max-height: calc(100vh - #{$pt-navbar-height});
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+		flex-grow: 1;
+	}
+
+	.droppable {
+		background-color: $light-gray5;
+		border-right: 1px solid $light-gray2;
+	}
+
+	@media (max-width: 1366px) {
+		grid-template-columns: 80% auto;
+	}
+}
+

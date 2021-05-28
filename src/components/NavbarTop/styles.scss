@@ -1,0 +1,34 @@
+.navbar {
+    position: relative;
+    z-index: 21;
+    
+    [class$="-dark"] {
+        box-shadow: none !important;
+    }
+
+    .logo {
+        background: rgb(226,30,233);
+        background: linear-gradient(0deg, rgba(226,30,233,1) 0%, rgba(255,143,242,1) 100%);
+        margin-left: -15px;
+        padding: 5px 15px;
+        display: block;
+        align-items: stretch;
+        height: 100%;
+        pointer-events: none;
+    
+        img {
+            height: 100%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    
+        span {
+            color: #FFF;
+            padding: 0 0 0 15px;
+            display: inline-block;
+            line-height: 1;
+            position: relative;
+            bottom: -2px;
+        }
+    }
+}

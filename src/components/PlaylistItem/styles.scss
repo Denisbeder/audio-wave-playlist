@@ -1,0 +1,134 @@
+@import "~@blueprintjs/core/lib/scss/variables.scss";
+
+.playlist-item {
+	.draggable-item {
+		height: auto;
+		display: grid;
+		grid-template-columns: 50px 50px auto 80px 80px 80px 50px;
+		grid-template-rows: auto;
+		align-items: stretch;
+		align-content: stretch;
+		background-color: #fff;
+		border-radius: 3px;
+		border-width: 1px;
+		border-style: solid;
+		border-color: $light-gray1;
+		margin-bottom: 5px;
+		color: $gray1;
+		transition: background-color 0.5s, color 0.5s;
+
+		&:hover {
+			background-color: lighten($cobalt5, 28%);
+			border-color: lighten($cobalt5, 18%);
+		}
+
+		.btn-play {
+			border-radius: 1000px;
+			margin-right: 15px;
+		}
+
+		.drag-handle {
+			cursor: grab;
+		}
+
+		> * {
+			border-right: inherit;
+			padding: 8px 15px;
+			display: flex;
+			align-items: center;
+
+			&:last-child {
+				border-right: none;
+			}
+		}
+
+		&.vignette {
+			background-color: $blue1;
+			color: $white;
+		}
+
+		&.pause {
+			color: $rose3;
+			border-color: $rose5;
+			font-weight: bold;
+			background: repeating-linear-gradient(
+				-45deg,
+				lighten($rose4, 22%),
+				lighten($rose4, 22%) 10px,
+				lighten($rose5, 20%) 10px,
+				lighten($rose5, 20%) 25px
+			);
+
+			> * {
+				border-color: inherit;
+
+				&:nth-child(3) {
+					width: 100%;
+					grid-column-start: 3;
+					grid-column-end: 8;
+					justify-content: space-around;
+				}
+			}
+		}
+
+		&.break {
+			color: $orange2;
+			border-color: $gold4;
+			background: lighten($gold5, 15%);
+
+			> * {
+				border-color: inherit;
+			}
+		}
+
+		&.recorded {
+			color: $indigo3;
+			border-color: $indigo5;
+
+			background: lighten($indigo5, 13%);
+
+			> * {
+				border-color: inherit;
+			}
+		}
+	}
+
+	.draggable {
+		overflow: hidden;
+		display: grid;
+	}
+
+	.dragging-handle {
+		transition: all 0.18s ease;
+		cursor: ns-resize;
+		box-shadow: 3px 3px 10px 3px rgba($gray5, 0.95);
+	}
+
+	.drop-handle {
+		opacity: 1;
+	}
+
+	.fill {
+		flex: 1;
+	}
+
+	.space-between {
+		justify-content: space-between;
+		text-align: left;
+	}
+
+	.left {
+		justify-content: start;
+		text-align: left;
+	}
+
+	.right {
+		justify-content: end;
+		text-align: right;
+	}
+
+	.center {
+		justify-content: center;
+		text-align: center;
+	}
+}

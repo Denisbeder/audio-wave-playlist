@@ -1,0 +1,50 @@
+@import "~normalize.css/normalize.css";
+@import "~@blueprintjs/core/lib/scss/variables.scss";
+@import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
+@import "~@blueprintjs/core/lib/css/blueprint.css";
+@import "~@blueprintjs/popover2/lib/css/blueprint-popover2.css";
+@import "~@blueprintjs/datetime/lib/css/blueprint-datetime.css";
+
+@import "./tabs";
+@import "./context-menu";
+@import "./dialog";
+
+body {
+	overflow: hidden;
+	color: $gray1;
+	> * {
+		user-select: none;
+	}
+}
+
+.selected > * {
+	user-select: auto !important;
+}
+
+.scrollable {
+	&::-webkit-scrollbar-track {
+		background-color: $white;
+	}
+
+	&::-webkit-scrollbar {
+		width: 13px;
+		background-color: $white;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border-radius: 1000px;
+		border: 3px solid $white;
+		background-color: $gray5;
+	}
+}
+
+.flex-column-container {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	flex-grow: 1;
+
+	&.shrink-0 {
+		flex-shrink: 0;
+	}
+}

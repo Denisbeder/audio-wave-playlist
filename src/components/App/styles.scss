@@ -1,0 +1,16 @@
+@import "~@blueprintjs/core/lib/scss/variables.scss";
+
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    > .app-content {
+        flex-grow: 1;
+        flex-shrink: 0;
+        max-height: calc(100vh - #{$pt-navbar-height});
+        margin-top: $pt-navbar-height;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+}

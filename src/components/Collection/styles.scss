@@ -1,0 +1,10 @@
+@import "~@blueprintjs/core/lib/scss/variables.scss";
+
+.collection {
+	padding-top: 20px;
+
+	.tabs > [class$="-list"] {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}

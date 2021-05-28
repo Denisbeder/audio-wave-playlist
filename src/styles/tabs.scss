@@ -1,0 +1,90 @@
+@import "~@blueprintjs/core/lib/scss/variables.scss";
+
+.tabs-theme-archive {
+	&.#{$ns}-tabs {
+		.#{$ns}-tab-list {
+			padding: 0;
+			border-bottom: 1px solid $light-gray2;
+
+			.#{$ns}-tab-indicator-wrapper {
+				display: none;
+			}
+
+			.#{$ns}-tab {
+				z-index: 2;
+				padding: 5px 10px;
+				margin-right: 3px;
+				margin-bottom: -1px;
+				background-color: $light-gray5 !important;
+				border-left: 1px solid $white;
+				border-right: 1px solid $white;
+				border-top: 1px solid $white;
+				border-bottom: 1px solid $light-gray2;
+				border-top-left-radius: 3px;
+				border-top-right-radius: 3px;
+				color: $gray3;
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+				&:hover {
+					background-color: $light-gray4 !important;
+				}
+
+				&[aria-selected="true"] {
+					color: $blue4;
+					font-weight: bold;
+					background-color: $white !important;
+					border-left: 1px solid $light-gray2;
+					border-right: 1px solid $light-gray2;
+					border-top: 1px solid $light-gray2;
+					border-bottom: 1px solid $white;
+				}
+			}
+		}
+	}
+}
+
+.tabs-theme-circle {
+	&.#{$ns}-tabs {
+		.#{$ns}-tab-list {
+			padding: 0;
+
+			.#{$ns}-tab-indicator-wrapper {
+				display: none;
+			}
+
+			.#{$ns}-tab {
+				z-index: 2;
+				padding: 0;
+				width: 40px;
+				height: 40px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				margin-right: 3px;
+				margin-bottom: -1px;
+				background-color: $white !important;
+				border: 1px solid $light-gray2;
+				border-radius: 1000px;
+				color: $gray2;
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+				&:hover {
+					background-color: lighten($blue5, 32%) !important;
+				}
+
+				&[aria-selected="true"] {
+					color: $white;
+					background-color: $blue5 !important;
+					border-color: $blue5 !important;
+				}
+			}
+		}
+	}
+}
